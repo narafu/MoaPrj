@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.mycloset {
+	margin-top: 75px;
+	margin-bottom: 150px;
+	}
+
+.card {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    color: white;
+    margin: 40px;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+    .card span {
+        display: none;
+        font-size: 50px;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    }
+
+.title { 
+	color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 5px 0px 5px rgba(0,0,0,1);
+    text-align: center;
+    padding: 40px;
+}
+
+    .title>div {
+        margin: 10px;
+    }
+
+.top-menu>.card:nth-child(1) {
+    background-color: #ec3843;
+}
+
+.top-menu>.card:nth-child(2) {
+    background-color: #f7c100;
+}
+
+.top-menu>.card:nth-child(3) {
+    background-color: #00bac9;
+}
+
+.bottom-menu>.card:nth-child(1) {
+    background-color: #7c5977;
+
+}
+
+.bottom-menu>.card:nth-child(2) {
+    background-color: #b2d135;
+}
+
+.cloth-menu
+.bottom-menu>.card:nth-child(3) {
+    background-color: #292929;
+}
+
+/* detail */
+
+.detail {
+    display: none;
+    position: absolute;
+    top: 125px;
+    left: 200px;
+    width: 1140px;
+    height: 560px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    margin: auto;
+}
+
+.detail .sub-title {
+    background-color: #ec3843;
+    padding: 15px 40px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    font-size: 30px;
+    color: white;
+}
+
+.category input {
+    margin-right: 50px;
+}
+
+.detail .exit {
+    margin: 20px;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    width: 90%;
+    height: 80%;
+    margin: auto;  
+}
+
+.cloth-box {
+    width: 300px;
+    height: 200px;
+    flex-direction: column;
+    border: solid 1px black;
+    position: relative;
+}
+
+    .cloth-box img {
+        width: auto;
+        max-height: 90%;
+    }
+
+    .cloth-box .fa-times {
+        position: absolute;
+        right: 10px;
+        top:10px;
+    }
+
+    .detail-register .cloth-box .fa-times {
+        display: none;
+    }
+
+    .detail-register button {
+        font-weight: 900;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+.pager {
+    margin: 0px auto;
+    color: #292929;
+}
+
+    .pager ul {
+        margin: 0px 10px;
+    }
+
+        .pager ul li {
+            padding: 0px 10px;
+        }
+
+.detail i:hover, li:hover, button {
+    cursor: pointer;
+}
+
+    input[type="file"] {
+        width: 200px;
+    }

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layouts/layout">
+
+<!-- css -->
+<th:block layout:fragment="css">
+	<link rel="stylesheet" href="/css/contents/board/video/list.css">
+</th:block>
+
+<!-- content -->
+<main id="main" layout:fragment="content">
+	<h1 class="hidden">main</h1>
+	<div class="container">
+
+		<div class="title">Video</div>
+
+		<form action="list" method="get">
+			<div class="top-btn flex-center">
+				<div class="search-btn">
+					<input type="text" name="s" value="">
+					<button><i class="fas fa-search"></i></button>
+				</div>
+				<div class="btn-reg">
+					<a href="reg">Write</a>
+				</div>
+			</div>
+		</form>
+
+		<section class="board-container flex-between">
+			<h1 class="hidden">board</h1>
+
+			<div class="board-video">
+				<div class="video-content flex-between">
+					<div class="video-img">
+						<a href="detail.html"> <img src="/images/thumbnail01.jpg"
+							alt="">
+						</a>
+					</div>
+					<div class="video-info flex-center">
+						<div class="like-hate flex-between">
+							<div>
+								<i class="like far fa-thumbs-up"></i>
+								<div>123</div>
+							</div>
+							<div>
+								<i class="hate far fa-thumbs-down"></i>
+								<div>456</div>
+							</div>
+						</div>
+						<div class="flex-evenly">
+							<span>조회수</span> <span>789</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-title">
+					<div class="video-img">
+						<a href=""><img src="/images/profile01.jpg" alt=""></a>
+					</div>
+					<a href="detail.html"> [ENG] ※🐶고생 재입고 완료※ 장성규 간만에 고생각?! 1+3
+						일거리 묶음 상품에 피 땀 눈물💦 다 폭주했다는 마트 알바 리뷰 | 워크맨 ep.53 </a>
+				</div>
+				<div class="recommend-comment">
+					<div>
+						<span>Comment</span> <span>:</span> <span>narafu 나라퓨</span>
+					</div>
+					<span>장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박
+						웃겨요~!!</span>
+				</div>
+			</div>
+			
+						<div class="board-video">
+				<div class="video-content flex-between">
+					<div class="video-img">
+						<a href="detail.html"> <img src="/images/thumbnail02.jpg"
+							alt="">
+						</a>
+					</div>
+					<div class="video-info flex-center">
+						<div class="like-hate flex-between">
+							<div>
+								<i class="like far fa-thumbs-up"></i>
+								<div>123</div>
+							</div>
+							<div>
+								<i class="hate far fa-thumbs-down"></i>
+								<div>456</div>
+							</div>
+						</div>
+						<div class="flex-evenly">
+							<span>조회수</span> <span>789</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-title">
+					<div class="video-img">
+						<a href=""><img src="/images/profile02.jpg" alt=""></a>
+					</div>
+					<a href="detail.html"> [ENG] ※🐶고생 재입고 완료※ 장성규 간만에 고생각?! 1+3
+						일거리 묶음 상품에 피 땀 눈물💦 다 폭주했다는 마트 알바 리뷰 | 워크맨 ep.53 </a>
+				</div>
+				<div class="recommend-comment">
+					<div>
+						<span>Comment</span> <span>:</span> <span>narafu 나라퓨</span>
+					</div>
+					<span>장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박
+						웃겨요~!!</span>
+				</div>
+			</div>
+			
+						<div class="board-video">
+				<div class="video-content flex-between">
+					<div class="video-img">
+						<a href="detail.html"> <img src="/images/thumbnail03.jpg"
+							alt="">
+						</a>
+					</div>
+					<div class="video-info flex-center">
+						<div class="like-hate flex-between">
+							<div>
+								<i class="like far fa-thumbs-up"></i>
+								<div>123</div>
+							</div>
+							<div>
+								<i class="hate far fa-thumbs-down"></i>
+								<div>456</div>
+							</div>
+						</div>
+						<div class="flex-evenly">
+							<span>조회수</span> <span>789</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-title">
+					<div class="video-img">
+						<a href=""><img src="/images/profile03.jpg" alt=""></a>
+					</div>
+					<a href="detail.html"> [ENG] ※🐶고생 재입고 완료※ 장성규 간만에 고생각?! 1+3
+						일거리 묶음 상품에 피 땀 눈물💦 다 폭주했다는 마트 알바 리뷰 | 워크맨 ep.53 </a>
+				</div>
+				<div class="recommend-comment">
+					<div>
+						<span>Comment</span> <span>:</span> <span>narafu 나라퓨</span>
+					</div>
+					<span>장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박
+						웃겨요~!!</span>
+				</div>
+			</div>
+
+			<div class="board-video">
+				<div class="video-content flex-between">
+					<div class="video-img">
+						<a href="detail.html"> <img src="/images/thumbnail04.jpg"
+							alt="">
+						</a>
+					</div>
+					<div class="video-info flex-center">
+						<div class="like-hate flex-between">
+							<div>
+								<i class="like far fa-thumbs-up"></i>
+								<div>123</div>
+							</div>
+							<div>
+								<i class="hate far fa-thumbs-down"></i>
+								<div>456</div>
+							</div>
+						</div>
+						<div class="flex-evenly">
+							<span>조회수</span> <span>789</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-title">
+					<div class="video-img">
+						<a href=""><img src="/images/profile04.jpg" alt=""></a>
+					</div>
+					<a href="detail.html"> [ENG] ※🐶고생 재입고 완료※ 장성규 간만에 고생각?! 1+3
+						일거리 묶음 상품에 피 땀 눈물💦 다 폭주했다는 마트 알바 리뷰 | 워크맨 ep.53 </a>
+				</div>
+				<div class="recommend-comment">
+					<div>
+						<span>Comment</span> <span>:</span> <span>narafu 나라퓨</span>
+					</div>
+					<span>장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박
+						웃겨요~!!</span>
+				</div>
+			</div>
+			
+						<div class="board-video">
+				<div class="video-content flex-between">
+					<div class="video-img">
+						<a href="detail.html"> <img src="/images/thumbnail05.jpg"
+							alt="">
+						</a>
+					</div>
+					<div class="video-info flex-center">
+						<div class="like-hate flex-between">
+							<div>
+								<i class="like far fa-thumbs-up"></i>
+								<div>123</div>
+							</div>
+							<div>
+								<i class="hate far fa-thumbs-down"></i>
+								<div>456</div>
+							</div>
+						</div>
+						<div class="flex-evenly">
+							<span>조회수</span> <span>789</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-title">
+					<div class="video-img">
+						<a href=""><img src="/images/profile05.jpg" alt=""></a>
+					</div>
+					<a href="detail.html"> [ENG] ※🐶고생 재입고 완료※ 장성규 간만에 고생각?! 1+3
+						일거리 묶음 상품에 피 땀 눈물💦 다 폭주했다는 마트 알바 리뷰 | 워크맨 ep.53 </a>
+				</div>
+				<div class="recommend-comment">
+					<div>
+						<span>Comment</span> <span>:</span> <span>narafu 나라퓨</span>
+					</div>
+					<span>장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박
+						웃겨요~!!</span>
+				</div>
+			</div>
+			
+						<div class="board-video">
+				<div class="video-content flex-between">
+					<div class="video-img">
+						<a href="detail.html"> <img src="/images/thumbnail06.jpg"
+							alt="">
+						</a>
+					</div>
+					<div class="video-info flex-center">
+						<div class="like-hate flex-between">
+							<div>
+								<i class="like far fa-thumbs-up"></i>
+								<div>123</div>
+							</div>
+							<div>
+								<i class="hate far fa-thumbs-down"></i>
+								<div>456</div>
+							</div>
+						</div>
+						<div class="flex-evenly">
+							<span>조회수</span> <span>789</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-title">
+					<div class="video-img">
+						<a href=""><img src="/images/profile06.jpg" alt=""></a>
+					</div>
+					<a href="detail.html"> [ENG] ※🐶고생 재입고 완료※ 장성규 간만에 고생각?! 1+3
+						일거리 묶음 상품에 피 땀 눈물💦 다 폭주했다는 마트 알바 리뷰 | 워크맨 ep.53 </a>
+				</div>
+				<div class="recommend-comment">
+					<div>
+						<span>Comment</span> <span>:</span> <span>narafu 나라퓨</span>
+					</div>
+					<span>장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박
+						웃겨요~!!</span>
+				</div>
+			</div>
+
+			<div class="board-video">
+				<div class="video-content flex-between">
+					<div class="video-img">
+						<a href="detail.html"> <img src="/images/thumbnail07.jpg"
+							alt="">
+						</a>
+					</div>
+					<div class="video-info flex-center">
+						<div class="like-hate flex-between">
+							<div>
+								<i class="like far fa-thumbs-up"></i>
+								<div>123</div>
+							</div>
+							<div>
+								<i class="hate far fa-thumbs-down"></i>
+								<div>456</div>
+							</div>
+						</div>
+						<div class="flex-evenly">
+							<span>조회수</span> <span>789</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-title">
+					<div class="video-img">
+						<a href=""><img src="/images/profile07.jpg" alt=""></a>
+					</div>
+					<a href="detail.html"> [ENG] ※🐶고생 재입고 완료※ 장성규 간만에 고생각?! 1+3
+						일거리 묶음 상품에 피 땀 눈물💦 다 폭주했다는 마트 알바 리뷰 | 워크맨 ep.53 </a>
+				</div>
+				<div class="recommend-comment">
+					<div>
+						<span>Comment</span> <span>:</span> <span>narafu 나라퓨</span>
+					</div>
+					<span>장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박
+						웃겨요~!!</span>
+				</div>
+			</div>
+
+			<div class="board-video">
+				<div class="video-content flex-between">
+					<div class="video-img">
+						<a href="detail.html"> <img src="/images/thumbnail08.jpg"
+							alt="">
+						</a>
+					</div>
+					<div class="video-info flex-center">
+						<div class="like-hate flex-between">
+							<div>
+								<i class="like far fa-thumbs-up"></i>
+								<div>123</div>
+							</div>
+							<div>
+								<i class="hate far fa-thumbs-down"></i>
+								<div>456</div>
+							</div>
+						</div>
+						<div class="flex-evenly">
+							<span>조회수</span> <span>789</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-title">
+					<div class="video-img">
+						<a href=""><img src="/images/profile08.jpg" alt=""></a>
+					</div>
+					<a href="detail.html"> [ENG] ※🐶고생 재입고 완료※ 장성규 간만에 고생각?! 1+3
+						일거리 묶음 상품에 피 땀 눈물💦 다 폭주했다는 마트 알바 리뷰 | 워크맨 ep.53 </a>
+				</div>
+				<div class="recommend-comment">
+					<div>
+						<span>Comment</span> <span>:</span> <span>narafu 나라퓨</span>
+					</div>
+					<span>장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박
+						웃겨요~!!</span>
+				</div>
+			</div>
+			
+						<div class="board-video">
+				<div class="video-content flex-between">
+					<div class="video-img">
+						<a href="detail.html"> <img src="/images/thumbnail09.jpg"
+							alt="">
+						</a>
+					</div>
+					<div class="video-info flex-center">
+						<div class="like-hate flex-between">
+							<div>
+								<i class="like far fa-thumbs-up"></i>
+								<div>123</div>
+							</div>
+							<div>
+								<i class="hate far fa-thumbs-down"></i>
+								<div>456</div>
+							</div>
+						</div>
+						<div class="flex-evenly">
+							<span>조회수</span> <span>789</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-title">
+					<div class="video-img">
+						<a href=""><img src="/images/profile09.jpg" alt=""></a>
+					</div>
+					<a href="detail.html"> [ENG] ※🐶고생 재입고 완료※ 장성규 간만에 고생각?! 1+3
+						일거리 묶음 상품에 피 땀 눈물💦 다 폭주했다는 마트 알바 리뷰 | 워크맨 ep.53 </a>
+				</div>
+				<div class="recommend-comment">
+					<div>
+						<span>Comment</span> <span>:</span> <span>narafu 나라퓨</span>
+					</div>
+					<span>장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박
+						웃겨요~!!</span>
+				</div>
+			</div>
+			
+						<div class="board-video">
+				<div class="video-content flex-between">
+					<div class="video-img">
+						<a href="detail.html"> <img src="/images/thumbnail10.jpg"
+							alt="">
+						</a>
+					</div>
+					<div class="video-info flex-center">
+						<div class="like-hate flex-between">
+							<div>
+								<i class="like far fa-thumbs-up"></i>
+								<div>123</div>
+							</div>
+							<div>
+								<i class="hate far fa-thumbs-down"></i>
+								<div>456</div>
+							</div>
+						</div>
+						<div class="flex-evenly">
+							<span>조회수</span> <span>789</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-title">
+					<div class="video-img">
+						<a href=""><img src="/images/profile10.jpg" alt=""></a>
+					</div>
+					<a href="detail.html"> [ENG] ※🐶고생 재입고 완료※ 장성규 간만에 고생각?! 1+3
+						일거리 묶음 상품에 피 땀 눈물💦 다 폭주했다는 마트 알바 리뷰 | 워크맨 ep.53 </a>
+				</div>
+				<div class="recommend-comment">
+					<div>
+						<span>Comment</span> <span>:</span> <span>narafu 나라퓨</span>
+					</div>
+					<span>장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박 웃겨요~!! 장성규가 대박
+						웃겨요~!!</span>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="page-num">
+			<span class="current"> 1 </span> <span> / </span> <span> 1 </span> <span>pages</span>
+		</div>
+
+		<div class="pager">
+			<ul class="flex-evenly">
+				<li><a href=""> <i class="fas fa-arrow-left"
+						onclick="alert('이전 페이지가 없습니다.');"></i>
+				</a></li>
+				<li><a class="" href="">1</a></li>
+				<li><a class="" href="">2</a></li>
+				<li><a class="" href="">3</a></li>
+				<li><a class="" href="">4</a></li>
+				<li><a class="" href="">5</a></li>
+				<li><a class="" href="">6</a></li>
+				<li><a class="" href="">7</a></li>
+				<li><a class="" href="">8</a></li>
+				<li><a class="" href="">9</a></li>
+				<li><a class="" href="">10</a></li>
+				<li><a href=""> <i class="fas fa-arrow-right"
+						onclick="alert('다음 페이지가 없습니다.');"></i>
+				</a></li>
+			</ul>
+		</div>
+	</div>
+
+</main>
+
+</html>

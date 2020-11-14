@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<header id="header" th:fragment="headerFragment">
+	<h1 class="hidden">header</h1>
+	<div class="container">
+		<div class="title-main">
+			<a href="/index">Moa</a>
+		</div>
+		<div>
+			<nav class="header-menu">
+				<h1 class="hidden">header-menu</h1>
+				<ul class="flex-center">
+					<li class="hexagon-wrapper">
+						<div class="hexagon flex-center">
+							<div class="text">
+								<a href="/board/video/list"> Video </a>
+							</div>
+						</div>
+					</li>
+					<li class="hexagon-wrapper">
+						<div class="hexagon flex-center">
+							<div class="text">
+								<a href="/board/channel/list">Channel </a>
+							</div>
+						</div>
+					</li>
+					<li class="hexagon-wrapper">
+						<div class="hexagon flex-center">
+							<a href="/board/ranking/list">
+								<div class="text">Ranking</div>
+							</a>
+						</div>
+					</li>
+					<li class="hexagon-wrapper">
+						<div class="hexagon flex-center">
+							<a href="/board/product/list">
+								<div class="text">Default</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div>
+			<nav class="member-menu">
+				<h1 class="hidden">member-menu</h1>
+				<ul class="">
+					<!-- 					<li class="mypage"><a href="/board/mypage/list">MyPage</a></li> -->
+					<li><a href="/member/kakaologin"> <img
+							src="/images/kakaologin.png">
+					</a></li>
+					<li><a href="/member/naverlogin"> <img
+							src="/images/naverlogin.png">
+					</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layouts/layout">
+
+<!-- css -->
+<th:block layout:fragment="css">
+	<link rel="stylesheet" href="/css/contents/board/video/reg.css">
+</th:block>
+
+<!-- content -->
+<main id="main" layout:fragment="content">
+	<h1 class="hidden">main</h1>
+	<div class="container">
+
+		<div class="container-table">
+			<div class="title">Write</div>
+
+			<form action="reg" method="post">
+				<table class="reg-table">
+					<thead>
+						<tr>
+							<th>작성일</th>
+							<td>2020.08.17.16:32:33</td>
+							<input type="hidden" name="regdate">
+						</tr>
+						<tr>
+							<th>작성자</th>
+							<td>나라퓨 narafu</td>
+							<input type="hidden" name="uid">
+						</tr>
+						<tr>
+							<th><img src="/images/youtube.png" alt=""></th>
+							<td><input type="text" name="title" id=""> <input
+								type="submit" value="&#xf002"></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="6">
+								<div>
+									<textarea name="content" id="" cols="30" rows="15"></textarea>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="bottom-btn flex-center">
+					<input type="submit" value="Confirm"> <a href="list"> <input
+						type="button" value="Cancle">
+					</a>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</main>
+</html>

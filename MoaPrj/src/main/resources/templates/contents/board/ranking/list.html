@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layouts/layout">
+
+<!-- css -->
+<th:block layout:fragment="css">
+	<link rel="stylesheet" href="/css/contents/board/ranking/list.css">
+</th:block>
+
+<!-- content -->
+<main id="main" layout:fragment="content">
+	<h1 class="hidden">main</h1>
+	<div class="container">
+
+		<div class="title">Ranking</div>
+
+		<section class="flex-between">
+			<table class="table-video">
+				<thead>
+					<tr>
+						<td>No.</td>
+						<td>Video</td>
+						<td>조회수</td>
+						<td>
+							<i class="like far fa-thumbs-up"></i>
+						</td>
+						<td>
+							<i class="like far fa-thumbs-down"></i>
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>999,999</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>888,888</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>777,777</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>666,666</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>555,555</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>123,456</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>456,123</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>333,444</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>532,155</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>652,642</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table-video">
+				<thead>
+					<tr>
+						<td>No.</td>
+						<td>Video</td>
+						<td>조회수</td>
+						<td>
+							<i class="like far fa-thumbs-up"></i>
+						</td>
+						<td>
+							<i class="like far fa-thumbs-down"></i>
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>999,999</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>888,888</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>777,777</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>666,666</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>555,555</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>123,456</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>456,123</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>333,444</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>532,155</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>652,642</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table-video">
+				<thead>
+					<tr>
+						<td>No.</td>
+						<td>Video</td>
+						<td>조회수</td>
+						<td>
+							<i class="like far fa-thumbs-up"></i>
+						</td>
+						<td>
+							<i class="like far fa-thumbs-down"></i>
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>999,999</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>888,888</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>777,777</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>666,666</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>555,555</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>123,456</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>456,123</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>333,444</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>532,155</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>
+							<img src="/images/sample1.jpg" alt="">
+						</td>
+						<td>652,642</td>
+						<td>5,442</td>
+						<td>543</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+	</div>
+
+</main>
+</html>

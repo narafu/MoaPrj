@@ -1,0 +1,30 @@
+
+.title {
+	margin: 50px;
+	text-align: center;
+	font-size: 3em;
+	text-shadow: #cccccc 5px 5px;
+}
+
+.table-video img {
+	width: 100px;
+}
+
+.table-video td {
+	border: solid 1px #cccccc;
+	padding: 10px;
+	text-align: center;
+}
+
+.table-video thead td {
+	font-weight: bold;
+}
+
+.table-video tbody td {
+	font-size: 0.75em;
+}
+
+.table-video tbody td:first-child {
+	font-size: 1em;
+	font-weight: bold;
+}

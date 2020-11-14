@@ -1,0 +1,30 @@
+
+a {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

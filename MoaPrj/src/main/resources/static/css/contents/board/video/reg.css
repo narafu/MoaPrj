@@ -1,0 +1,102 @@
+
+#main {
+	height: 800px;
+}
+
+.container-table {
+	width: 90%;
+	margin: 50px auto;
+}
+
+.title {
+	margin: 50px;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: #cccccc 5px 5px;
+}
+
+.reg-table {
+	background: white;
+	width: 700px;
+	margin: 10px auto;
+	border: solid 1px #cccccc;
+	color: #292929;
+}
+
+thead {
+	border: solid 1px #cccccc;
+}
+
+.reg-table tr th {
+	padding: 10px 20px;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.reg-table img {
+	width: 75px;
+	height: 20px;
+}
+
+.reg-table>thead>tr>td {
+	font-size: 0.9em;;
+	font-weight: bold;
+}
+
+.reg-table>thead th {
+	border-bottom: solid 1px #cccccc;
+	text-align: center;
+}
+
+.reg-table>thead td {
+	border-bottom: solid 1px #cccccc;
+	padding: 5px;
+}
+
+.reg-table td input {
+	height: 25px;
+}
+
+.reg-table td input[type="text"] {
+	width: 450px;
+}
+
+.search-btn input[type="submit"] {
+	width: 45px;
+	margin-left: 5px;
+	font-family: FontAwesome;
+}
+
+.reg-table input[type="submit"] {
+	width: 35px;
+	font-family: FontAwesome;
+	background: white;
+	border: none;
+}
+
+input:hover {
+	cursor: pointer;
+}
+
+textarea {
+	width: 90%;
+	padding: 15px;
+	margin: 20px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.bottom-btn {
+	margin: 40px;
+}
+
+.bottom-btn input {
+	padding: 5px 10px;
+	margin: 10px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 900;
+}
+
+.bottom-btn input:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}

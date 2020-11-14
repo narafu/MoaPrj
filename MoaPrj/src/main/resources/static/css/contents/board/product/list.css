@@ -1,0 +1,386 @@
+/* prod/list/component/body */
+a {
+	color: #292929;
+}
+
+/* noodle-list-category */
+.noodle-list-category ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 15px;
+	height: 100px;
+}
+
+.noodle-list-category ul li {
+	display: flex;
+	color: #666666;
+	font-weight: bold;
+}
+
+.noodle-list-category .hover-color a {
+	color: #c4001d;
+	font-weight: bold;
+}
+
+.noodle-list-category>ul>li:first-child>a {
+	color: #c4001d;
+	font-weight: bold;
+}
+
+.noodle-list-category ul li:hover {
+	border-bottom: 2px solid #42a5f5;
+}
+
+.noodle-list-category ul li:nth-child(7):hover {
+	border-bottom: none;
+}
+
+.noodle-list-category ul li:nth-child(8):hover {
+	border-bottom: none;
+}
+
+.noodle-list-category ul li:nth-child(8) label {
+	line-height: 30px;
+	padding: 0 10px;
+}
+
+.noodle-list-category ul .search form {
+	display: flex;
+	flex: none;
+	background-color: #eeeeee;
+	align-items: center;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	margin-left: auto;
+}
+
+.noodle-list-category ul input {
+	height: 30px;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	color: #666666;
+	font-size: 0.9em;
+	outline: none;
+	font-family: FontAwesome;
+	border: none;
+	cursor: pointer;
+}
+
+.noodle-list-category ul input[type="text"] {
+	font-weight: normal;
+	cursor: text;
+}
+
+.noodle-list-category ul input[type="text"] {
+	width: 150px;
+	padding-left: 10px;
+}
+
+.noodle-list-category ul input[type="submit"] {
+	padding: 0px 10px;
+}
+
+.noodle-list-category ul input[type="checkbox"] {
+	width: 20px;
+}
+
+/* noodle-list-img */
+.noodle-img {
+	height: 85%;
+}
+
+.noodle-list-img {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 10px;
+}
+
+.noodle-list-img .item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 10px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: solid 1px #dddddd;
+	box-shadow: 2.5px 2.5px 5px #dddddd;
+}
+
+.noodle-list-img .item .item-img {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 10px 5px 10px;
+	background-color: white;
+}
+
+.noodle-list-img img {
+	max-width: 120px;
+	max-height: 120px;
+}
+
+.noodle-list-img .item .item-name {
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8em;
+	font-weight: bold;
+	font-family: 'S-CoreDream-3Light', SpeedeeK, Malgun Gothic, '���� ����',
+		Dotum, '����', Arial, sans-serif;
+}
+
+.noodle-list-img .item .review-link {
+	font-size: 0.7em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.noodle-list-img .item .review-link div {
+	padding: 5px;
+}
+
+.noodle-list-img .item:hover {
+	cursor: pointer;
+}
+
+/* pager */
+
+.current {
+	color: #c4001d;
+	font-weight: bold;
+}
+
+.list div {
+	padding: 2.5px;
+}
+
+.list,
+.three-btn {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 10px;
+}
+
+.pager {
+	padding: 10px;
+}
+
+.pager ul {
+	padding: 5px;
+}
+.pageLink {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pager ul>li {
+	padding: 5px;
+}
+
+.pager ul>li>a {
+	padding: 0px 10px;
+	font-size: 1.5em;
+	font-family: 'Black Han Sans', sans-serif;
+}
+
+/* ranking */
+/* noodle-ranking-table */
+.noodle-ranking .table-title {
+	font-size: 2.5em;
+	display: inline-block;
+	letter-spacing: 10px;
+	color: #c4001d;
+	font-weight: bold;
+	font-family: 'Righteous', cursive;
+}
+
+.ranking-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.noodle-ranking .radio {
+	font-size: 0.9em;
+	padding: 0px 10px;
+	display: flex;
+}
+
+.noodle-ranking .radio>div {
+	padding: 0px 10px;
+}
+
+.noodle-ranking .table-sub-left {
+	font-size: 0.8em;
+	text-align: left;
+}
+
+.noodle-ranking .table-sub-right {
+	font-size: 0.8em;
+	text-align: right;
+}
+
+.noodle-ranking-table {
+	table-layout: fixed;
+	margin-top: 10px;
+	width: 100%;
+	font-family: 'Righteous', cursive;
+	border-spacing: 5px;
+	border-collapse: separate;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+.noodle-ranking-table .cell-rank {
+	width: 25px;
+}
+
+.noodle-ranking-table .cell-img {
+	width: 100px
+}
+
+.noodle-ranking-table .cell-img .rm-img {
+	max-height: 80px;
+	max-width: 80px;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+}
+
+.noodle-ranking-table tr {
+	height: 90px;
+}
+
+.noodle-ranking-table td {
+	border-bottom: solid #e2e1e1 1px;
+	width: 100%;
+}
+
+.noodle-ranking-table td:first-child {
+	border: none;
+	border-bottom: solid #e2e1e1 1px;
+	font-weight: bold;
+	color: #c4001d;
+	font-size: 2em;
+}
+
+.noodle-ranking-table .logo-img {
+	max-height: 35px;
+	max-width: 40px;
+	width: auto;
+	height: auto;
+}
+
+.noodle-ranking-table .value {
+	letter-spacing: -2px;
+}
+
+/* detail */
+.detail {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
+	padding: 20px 30px;
+	background-color: #eeeeee;
+	border-radius: 20px;
+	border: solid 2px #c4001d;
+	box-shadow: 7.5px 7.5px 10px #cccccc;
+	font-family: 'S-CoreDream-3Light', SpeedeeK, Malgun Gothic, '���� ����',
+		Dotum, '����', Arial, sans-serif;
+}
+
+.detail .fa-times-circle {
+	cursor: pointer;
+	align-self: start;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.detail .top-container {
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	font-size: 0.9em;
+}
+
+.detail .img-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	height: 350px;
+	padding: 10px;
+	background-color: white;
+}
+
+.detail .img-container img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.detail .info-container {
+	font-size: 1em;
+	line-height: 200%;
+	padding-left: 30px;
+	text-align: center;
+}
+
+.detail .info-container .item-name {
+	font-size: 2em;
+	text-align: center;
+	padding: 30px 0px;
+	font-family: 'Black Han Sans', sans-serif;
+}
+
+.detail .info-container .review-link {
+	font-family: 'Righteous', cursive;
+	padding: 25px 0px 10px 0px;
+	font-size: 1.2em;
+}
+
+.detail .info-container .review-link>div {
+	padding: 10px;
+}
+
+.detail .table-container {
+	width: 95%;
+	font-size: 0.8em;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.detail .table-container table {
+	width: 520px;
+	margin: auto;
+	border: solid 2px #bbbbbb;
+}
+
+.detail .table-container table thead {
+	font-weight: bold;
+}
+
+.detail .table-container table tbody {
+	font-size: 0.9em;
+}
+
+.detail .table-container table td {
+	padding: 5px 10px;
+	border-color: #bbbbbb;
+}
+
+.detail .table-container span {
+	font-size: 0.8em;
+}

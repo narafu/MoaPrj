@@ -1,0 +1,123 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap')
+	;
+
+@font-face {
+	font-family: '777Littlebear';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Littlebear.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	min-width: 1080px;
+	min-height: 100vh;
+	font-family: 'Orbitron', sans-serif;
+	color: #292929;
+	font-weight: 900;
+}
+
+#header {
+	background: #20232a;
+	padding: 50px;
+	font-size: 1.5em;
+	text-align: center;
+	border-bottom: solid 1px #dddddd;
+}
+
+.title-main {
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+}
+
+.header-menu {
+	flex-grow: 1;
+	align-self: flex-end;
+}
+
+.header-menu .hexagon-wrapper {
+	display: flex;
+	width: 200px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.header-menu .hexagon {
+	background: white;
+	color: #282c34;
+	position: relative;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	transition: 0.5s;
+	z-index: 0;
+	padding: 5px;
+}
+
+.header-menu .hexagon .text {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header-menu .hexagon:hover {
+	color: #292929;
+	border-radius: 50px;
+	transition: 0.5s;
+	background: linear-gradient(-180deg, #fda3b2, #e37682);
+}
+
+.member-menu {
+	align-self: flex-end;
+}
+
+.member-menu .mypage {
+	color: white;
+	font-size: 12px;
+	display: block;
+	padding: 7.5px 12.5px;
+	margin: 2.5px;
+}
+
+.member-menu .mypage:hover {
+	background: linear-gradient(-180deg, #fda3b2, #e37682);
+	color: #292929;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+
+.member-menu .mypage:hover a {
+	font-weight: bold;
+}
+
+.member-menu img {
+	width: 150px;
+	height: 35px;
+}
+
+#main {
+	background: white;
+	padding: 50px 0px;
+}
+
+#footer {
+	color: white;
+	background: #20232a;
+	padding: 50px;
+	border-top: solid 1px #dddddd;
+}
+
+.footer-menu {
+	flex-grow: 9;
+}
+
+.sns-menu {
+	flex-grow: 1;
+}
+
+.container {
+	width: 85%;
+	margin: 0px auto;
+}
